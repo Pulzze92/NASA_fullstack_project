@@ -1,7 +1,8 @@
+require("dotenv").config();
+
 const PORT = process.env.PORT || 8000;
 
-const MONGO_URL =
-  "***REMOVED***";
+const MONGO_URL = process.env.MONGO_URL;
 
 const http = require("http");
 const mongoose = require("mongoose");
